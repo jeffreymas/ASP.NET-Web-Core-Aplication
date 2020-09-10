@@ -13,10 +13,15 @@ namespace LearnNetCore.Context
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<RoleUser> RoleUsers { get; set; }
-
-        public MyContext()
+        public DbSet<Departments> Departments { get; set; }
+        public DbSet<Divisions> Divisions { get; set; }
+        public DbSet<Employees> Employees { get; set; }
+        protected override void OnModelCreating( ModelBuilder modelBuilder)
         {
-
+            modelBuilder.Entity<Employees>()
+                        .HasOne<User>(e => e.User)
+                        .WithOne(u => u.Employees)
+                        .HasForeignKey<Employees>(u => u.EmpId);
         }
         
     }

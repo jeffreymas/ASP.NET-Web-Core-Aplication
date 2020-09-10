@@ -19,6 +19,52 @@ namespace LearnNetCore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("LearnNetCore.Models.Departments", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTimeOffset>("CreateDate");
+
+                    b.Property<DateTimeOffset>("DeleteDate");
+
+                    b.Property<string>("Name");
+
+                    b.Property<bool>("isDelete");
+
+                    b.Property<DateTimeOffset>("updateDate");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("tb_m_departments");
+                });
+
+            modelBuilder.Entity("LearnNetCore.Models.Divisions", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTimeOffset>("CreateDate");
+
+                    b.Property<DateTimeOffset>("DeleteDate");
+
+                    b.Property<string>("Name");
+
+                    b.Property<int>("department_id");
+
+                    b.Property<bool>("isDelete");
+
+                    b.Property<DateTimeOffset>("updateDate");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("department_id");
+
+                    b.ToTable("tb_m_divisions");
+                });
+
             modelBuilder.Entity("LearnNetCore.Models.Role", b =>
                 {
                     b.Property<string>("Id")
@@ -90,6 +136,14 @@ namespace LearnNetCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("tb_m_user");
+                });
+
+            modelBuilder.Entity("LearnNetCore.Models.Divisions", b =>
+                {
+                    b.HasOne("LearnNetCore.Models.Departments", "Departments")
+                        .WithMany()
+                        .HasForeignKey("department_id")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("LearnNetCore.Models.RoleUser", b =>

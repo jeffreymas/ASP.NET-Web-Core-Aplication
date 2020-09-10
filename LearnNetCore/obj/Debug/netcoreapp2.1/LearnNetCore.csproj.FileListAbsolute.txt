@@ -3,7 +3,6 @@ C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\LearnNetCore\b
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\LearnNetCore\bin\Debug\netcoreapp2.1\LearnNetCore.runtimeconfig.dev.json
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\LearnNetCore\bin\Debug\netcoreapp2.1\LearnNetCore.dll
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\LearnNetCore\bin\Debug\netcoreapp2.1\LearnNetCore.pdb
-C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\LearnNetCore\obj\Debug\netcoreapp2.1\LearnNetCore.csprojAssemblyReference.cache
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\LearnNetCore\obj\Debug\netcoreapp2.1\LearnNetCore.csproj.CoreCompileInputs.cache
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\LearnNetCore\obj\Debug\netcoreapp2.1\LearnNetCore.RazorAssemblyInfo.cache
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\LearnNetCore\obj\Debug\netcoreapp2.1\LearnNetCore.RazorAssemblyInfo.cs

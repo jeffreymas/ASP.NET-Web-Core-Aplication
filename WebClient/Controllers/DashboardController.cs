@@ -13,7 +13,20 @@ namespace WebClient.Controllers
         {
             if (HttpContext.Session.GetString("lvl") == "Sales" || HttpContext.Session.GetString("lvl")== "Admin")
             {
-                return View();
+                if (HttpContext.Session.GetString("lvl") == "Admin")
+                {
+                    return View();
+                }
+                return Redirect("/dashboard/profile");
+            }
+            return Redirect("/Login");
+        }
+
+        public IActionResult Profile()
+        {
+            if (HttpContext.Session.GetString("lvl") == "Sales" || HttpContext.Session.GetString("lvl") == "Admin")
+            {
+                return View("~/Views/Dashboard/Profile.cshtml");
             }
             return Redirect("/Login");
         }

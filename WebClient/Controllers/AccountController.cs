@@ -188,7 +188,7 @@ namespace Web.Controllers
         [Route("getjwt")]
         public IActionResult GetName()
         {
-            var stream = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImRiM2VhZmIxLTkyMWUtNDdmYS1hOGFiLTIwNDYxMzkxM2FlMCIsIlVzZXJuYW1lIjoiUmlmcXkiLCJFbWFpbCI6Im11aGFtbWFkcmlmcWkwQGdtYWlsLmNvbSIsIlJvbGVOYW1lIjoiU2FsZXMiLCJleHAiOjE1OTk1NDY0MTYsImlzcyI6IkludmVudG9yeUF1dGhlbnRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSW52ZW50b3J5c2VydmljZVBvc3RtYW50Q2xpZW50In0.ziIjgvqJdH17w4HwHGzvXyZTUz41S06i0xHWGxAnY2M";
+            var stream = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImYyNTE3YjdkLTQwODYtNDA4Yy1hMGY0LWIxNTFjMDlkNTQ3MCIsIlVzZXJOYW1lIjoiSmVwcmkiLCJFbWFpbCI6ImplcHJpLnR1Z2FzQGdtYWlsLmNvbSIsIlJvbGVOYW1lIjoiQWRtaW4iLCJWZXJpZnlDb2RlIjoiMDc2NCIsImV4cCI6MTU5OTc5MjkyMCwiaXNzIjoiTGVhcm5OZXRDb3JlU2VydmVyIiwiYXVkIjoiTGVhcm5OZXRDb3JlQ2xpZW50In0.3wSwJfmsuxIxnVM3t969vbO9dK8-dT1tB3pbyO7pWOw";
             var handler = new JwtSecurityTokenHandler();
             var tokenS = handler.ReadJwtToken(stream);
             //var cek = tokenS.Payload;

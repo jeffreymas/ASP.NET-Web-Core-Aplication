@@ -10,6 +10,7 @@ namespace LearnNetCore.Models
     [Table("tb_m_user")]
     public class User:IdentityUser
     {
-
+        public ICollection<RoleUser> userRoles { get; set; }
+        public Employees Employees { get; set; }
     }
 }

@@ -53,10 +53,16 @@ C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Account\verify.g.cshtml.cs
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\Index.g.cshtml.cs
+C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\Profile.g.cshtml.cs
+C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Departments\View.g.cshtml.cs
+C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Divisions\View.g.cshtml.cs
+C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Employees\ViewEmp.g.cshtml.cs
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Error.g.cshtml.cs
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Layout\Content.g.cshtml.cs
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Layout\Layout.g.cshtml.cs
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Layout\LayoutAccount.g.cshtml.cs
 C:\Users\Jepri\Documents\Visual Studio 2017\Projects\LearnNetCore\WebClient\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs

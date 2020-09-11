@@ -124,6 +124,13 @@ namespace LearnNetCore.Controllers
                 user.SecurityStamp = code;
                 roleuser.Role = role;
                 roleuser.User = user;
+                var emp = new Employees
+                {
+                    EmpId = user.Id,
+                    CreateTime = DateTimeOffset.Now,
+                    IsDelete = false
+                };
+                _context.Employees.Add(emp);
                 _context.RoleUsers.AddAsync(roleuser);
                 _context.Users.AddAsync(user);
                 _context.SaveChanges();
@@ -169,17 +176,17 @@ namespace LearnNetCore.Controllers
         }
 
 
-        [HttpPost]
-        [Route("Register")]
-        public IActionResult Register(UserVM userVM)
-        {
-            if (ModelState.IsValid)
-            {
-                this.Create(userVM);
-                return Ok();
-            }
-            return BadRequest();
-        }
+        //[HttpPost]
+        //[Route("Register")]
+        //public IActionResult Register(UserVM userVM)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        this.Create(userVM);
+        //        return Ok();
+        //    }
+        //    return BadRequest();
+        //}
 
         [HttpPost]
         //[HttpGet("{}")]

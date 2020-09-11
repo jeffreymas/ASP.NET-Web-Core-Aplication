@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LearnNetCore.Context;
 using LearnNetCore.Models;
+using LearnNetCore.Repositories.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,6 +36,8 @@ namespace LearnNetCore
             services.AddDbContext<MyContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MyConnection")));
 
             services.AddIdentityCore<User>().AddEntityFrameworkStores<MyContext>();
+            services.AddScoped<DepartmentsRepo>();
+            services.AddScoped<DivisionsRepo>();
 
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
@@ -47,9 +50,14 @@ namespace LearnNetCore
                     ValidateAudience = true,
                     ValidAudience = Configuration["Jwt:Audience"],
                     ValidIssuer = Configuration["Jwt:Issuer"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"])),
-                    ValidateLifetime = true,
-                    ClockSkew = TimeSpan.Zero
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                    //ValidateIssuer = true,
+                    //ValidateAudience = true,
+                    //ValidAudience = Configuration["Jwt:Audience"],
+                    //ValidIssuer = Configuration["Jwt:Issuer"],
+                    //IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"])),
+                    //ValidateLifetime = true,
+                    //ClockSkew = TimeSpan.Zero
 
                 };
             });

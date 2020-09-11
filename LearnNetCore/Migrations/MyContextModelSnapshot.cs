@@ -19,6 +19,71 @@ namespace LearnNetCore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("LearnNetCore.Models.Departments", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTimeOffset>("CreateDate");
+
+                    b.Property<DateTimeOffset>("DeleteDate");
+
+                    b.Property<string>("Name");
+
+                    b.Property<bool>("isDelete");
+
+                    b.Property<DateTimeOffset>("updateDate");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("tb_m_departments");
+                });
+
+            modelBuilder.Entity("LearnNetCore.Models.Divisions", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTimeOffset>("CreateDate");
+
+                    b.Property<DateTimeOffset>("DeleteDate");
+
+                    b.Property<string>("Name");
+
+                    b.Property<int>("department_id");
+
+                    b.Property<bool>("isDelete");
+
+                    b.Property<DateTimeOffset>("updateDate");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("department_id");
+
+                    b.ToTable("tb_m_divisions");
+                });
+
+            modelBuilder.Entity("LearnNetCore.Models.Employees", b =>
+                {
+                    b.Property<string>("EmpId");
+
+                    b.Property<string>("Adress");
+
+                    b.Property<DateTimeOffset>("CreateTime");
+
+                    b.Property<DateTimeOffset>("DeleteTime");
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<DateTimeOffset>("UpdateTime");
+
+                    b.HasKey("EmpId");
+
+                    b.ToTable("tb_m_mployee");
+                });
+
             modelBuilder.Entity("LearnNetCore.Models.Role", b =>
                 {
                     b.Property<string>("Id")
@@ -92,6 +157,22 @@ namespace LearnNetCore.Migrations
                     b.ToTable("tb_m_user");
                 });
 
+            modelBuilder.Entity("LearnNetCore.Models.Divisions", b =>
+                {
+                    b.HasOne("LearnNetCore.Models.Departments", "Departments")
+                        .WithMany()
+                        .HasForeignKey("department_id")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("LearnNetCore.Models.Employees", b =>
+                {
+                    b.HasOne("LearnNetCore.Models.User", "User")
+                        .WithOne("Employees")
+                        .HasForeignKey("LearnNetCore.Models.Employees", "EmpId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("LearnNetCore.Models.RoleUser", b =>
                 {
                     b.HasOne("LearnNetCore.Models.Role", "Role")
@@ -99,7 +180,7 @@ namespace LearnNetCore.Migrations
                         .HasForeignKey("RoleId");
 
                     b.HasOne("LearnNetCore.Models.User", "User")
-                        .WithMany()
+                        .WithMany("userRoles")
                         .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618

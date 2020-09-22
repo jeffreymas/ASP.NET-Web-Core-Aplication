@@ -150,7 +150,7 @@ namespace LearnNetCore.Controllers
                 getId.Id = userVM.Id;
                 getId.UserName = userVM.UserName;
                 getId.Email = userVM.Email;
-                getId.PasswordHash = hasbcrypt;
+                getId.PasswordHash = hasbcrypt;           
                 getId.PhoneNumber = userVM.Phone;
                 _context.SaveChanges();
                 return Ok("Successfully Update");

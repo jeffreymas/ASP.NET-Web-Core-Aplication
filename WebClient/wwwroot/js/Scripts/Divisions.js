@@ -133,29 +133,29 @@ $(document).ready(function () {
                     $('c[r=C2] t', sheet).text('Department');
                 }
             },
-            {
-                extend: 'csvHtml5',
-                text: '<i class="fas fa-file-csv" data-placement="Bottom" data-toggle="tooltip" data-animation="false" title="CSV"></i>',
-                className: 'btn btn-info',
-                title: 'Division List',
-                filename: 'cek ' + moment(),
-                exportOptions: {
-                    columns: [0, 1, 2, 3, 4],
-                    search: 'applied',
-                    order: 'applied',
-                    modifier: {
-                        page: 'current',
-                    },
-                },
-                customize: function (excel) {
-                    debugger;
-                    var sheet = excel.xl.worksheets['sheet1.xml'];
-                    // jQuery selector to add a border
-                    //$('col c[r*="10"]', sheet).attr('s', '25');
-                    $('c[r=A2] t', sheet).text('No.');
-                    $('c[r=C2] t', sheet).text('Department');
-                }
-            },
+            //{
+            //    extend: 'csvHtml5',
+            //    text: '<i class="fas fa-file-csv" data-placement="Bottom" data-toggle="tooltip" data-animation="false" title="CSV"></i>',
+            //    className: 'btn btn-info',
+            //    title: 'Division List',
+            //    filename: 'cek ' + moment(),
+            //    exportOptions: {
+            //        columns: [0, 1, 2, 3, 4],
+            //        search: 'applied',
+            //        order: 'applied',
+            //        modifier: {
+            //            page: 'current',
+            //        },
+            //    },
+            //    customize: function (csv) {
+            //        debugger;
+            //        var sheet = csv.xl.worksheets['sheet1.xml'];
+            //        // jQuery selector to add a border
+            //        //$('col c[r*="10"]', sheet).attr('s', '25');
+            //        $('c[r=A2] t', sheet).text('No.');
+            //        $('c[r=C2] t', sheet).text('Department');
+            //    }
+            //},
             {
                 extend: 'print',
                 text: '<i class="fas fa-print" data-placement="Bottom" data-toggle="tooltip" data-animation="false" title="Print"></i>',

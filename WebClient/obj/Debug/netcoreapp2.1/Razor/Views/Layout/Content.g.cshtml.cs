@@ -63,7 +63,7 @@ using WebClient.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(35, 916, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "084c852466ce47a6a26143d5dc758bf5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da5733812c9645be9f1f20a997a4bdf4", async() => {
                 BeginContext(41, 903, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -102,7 +102,7 @@ using WebClient.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(953, 20914, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0ca9a6e73fd46a0b316713f9dbc6185", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77cbb4893d2f42a78068af63e4f1dc4e", async() => {
                 BeginContext(973, 5830, true);
                 WriteLiteral(@"
     <!-- Page Wrapper -->
@@ -223,7 +223,7 @@ using WebClient.Models;
                     ");
                 EndContext();
                 BeginContext(6803, 253, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "461fa220e4794f5db928a32511afadcc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d3e92379560e46ad8417e72cebd2ee16", async() => {
                     BeginContext(6829, 220, true);
                     WriteLiteral("\r\n                        <button id=\"sidebarToggleTop\" class=\"btn btn-link d-md-none rounded-circle mr-3\">\r\n                            <i class=\"fa fa-bars\"></i>\r\n                        </button>\r\n                    ");
                     EndContext();
@@ -246,7 +246,7 @@ using WebClient.Models;
                 WriteLiteral("\r\n                    <!-- Topbar Search -->\r\n                    ");
                 EndContext();
                 BeginContext(7122, 681, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c78f05733ec241f79e137645e8a0f87c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "303a062643f343ab9db92fdb72866d25", async() => {
                     BeginContext(7223, 573, true);
                     WriteLiteral(@"
                         <div class=""input-group"">
@@ -288,7 +288,7 @@ using WebClient.Models;
                                 ");
                 EndContext();
                 BeginContext(8563, 742, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e88f6e01b4f049c3a6e1e758e32a5149", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a047484ba734c4abf221e4046cbb1ed", async() => {
                     BeginContext(8617, 681, true);
                     WriteLiteral(@"
                                     <div class=""input-group"">
@@ -526,7 +526,7 @@ using WebClient.Models;
                 WriteLiteral(" <!-- Custom scripts for all pages-->\r\n    ");
                 EndContext();
                 BeginContext(21448, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "700797be6c4941bdae89a7a4deb3cc5d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20d925e554914549acc35f42a719aba1", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -544,7 +544,7 @@ using WebClient.Models;
                 WriteLiteral("\r\n    <!-- Page level plugins -->\r\n    <script src=\"~vendor/datatables/jquery.dataTables.min.js\"></script>\r\n    <script src=\"~vendor/datatables/dataTables.bootstrap4.min.js\"></script>\r\n    ");
                 EndContext();
                 BeginContext(21698, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2484944acba54a0994519a53f378ee3e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b41393dc239418289dd9cf0bf78d1bd", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
